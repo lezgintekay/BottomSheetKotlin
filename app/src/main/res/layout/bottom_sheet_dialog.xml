@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <ImageView
+            android:id="@+id/kotlin_course"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/kotlin"/>
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/kotlin_course"
+            android:layout_toRightOf="@id/kotlin_course"
+            android:text="Kotlin Advanced Level"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/courseTracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseName"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/kotlin_course"
+            android:layout_toRightOf="@id/kotlin_course"
+            android:text="Course Tracks : 30"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/CourseDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseTracks"
+            android:layout_toEndOf="@id/kotlin_course"
+            android:layout_toRightOf="@id/kotlin_course"
+            android:text="Course Duration : 1 Month"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/btnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kotlin_course"
+            android:layout_margin="10dp"
+            android:text="Dismiss Dialog"
+            android:textAllCaps="false"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
